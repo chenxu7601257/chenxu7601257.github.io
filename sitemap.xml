@@ -51,6 +51,13 @@
   </url>
   
   <url>
+    <loc>//jacob.cool/assets/demo/hack_demo.html</loc>
+    
+    <lastmod>2017-04-22T03:59:08.565Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>//jacob.cool/assets/demo/jiugongge_demo2.html</loc>
     
     <lastmod>2017-04-22T03:59:08.565Z</lastmod>
@@ -65,14 +72,14 @@
   </url>
   
   <url>
-    <loc>//jacob.cool/assets/demo/my_news_reader/js/main.js</loc>
+    <loc>//jacob.cool/assets/demo/jquery.js</loc>
     
     <lastmod>2017-04-22T03:59:08.565Z</lastmod>
     
   </url>
   
   <url>
-    <loc>//jacob.cool/assets/demo/jquery.js</loc>
+    <loc>//jacob.cool/assets/demo/my_news_reader/index.html</loc>
     
     <lastmod>2017-04-22T03:59:08.565Z</lastmod>
     
@@ -86,7 +93,7 @@
   </url>
   
   <url>
-    <loc>//jacob.cool/assets/demo/hack_demo.html</loc>
+    <loc>//jacob.cool/assets/demo/my_news_reader/js/main.js</loc>
     
     <lastmod>2017-04-22T03:59:08.565Z</lastmod>
     
@@ -101,13 +108,6 @@
   
   <url>
     <loc>//jacob.cool/assets/demo/mediator/mediator.js</loc>
-    
-    <lastmod>2017-04-22T03:59:08.565Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>//jacob.cool/assets/demo/my_news_reader/index.html</loc>
     
     <lastmod>2017-04-22T03:59:08.565Z</lastmod>
     
