@@ -112,7 +112,7 @@
     };
     var render = function render(res) {
       var ulTmpl = "";
-      var baseUrl="http://www.z4a.net/images/";
+      
       for (var j = 0, len2 = res.list.length; j < len2; j++) {
         var data = res.list[j].arr;
         var date=res.list[j].date;
@@ -120,16 +120,16 @@
         for (var i = 0, len = data.link.length; i < len; i++) {
           //var minSrc = 'http://litten.me/ins-min/' + data.link[i] + '.min.jpg';
           //var src = 'http://litten.me/ins/' + data.link[i];
-
-          var minSrc = baseUrl+data.year+'/'+data.month+'/'+data.day+'/' + data.link[i] + '.th.jpg';
-         var src = baseUrl+data.year+'/'+data.month+'/'+data.day+'/' + data.link[i];
+          
+          var minSrc = data.baseUrl+'/' + data.link[i] + '.JPG?imageView2/1/w/250/h/140';
+          var src = data.baseUrl+'/' + data.link[i];
 
           var type = data.type[i];
-          var target = src + (type === 'video' ? '.mp4' : '.jpg');
-          src += '.jpg';
+          var target = src + (type === 'video' ? '.mp4' : '.JPG');
+          src += '.JPG';
 
           liTmpl += '<figure class="thumb" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">\
-                <a href="' + src + '" itemprop="contentUrl" data-size="640x640" data-type="' + type + '" data-target="' + target + '">\
+                <a href="' + src + '" itemprop="contentUrl" data-size="840x630" data-type="' + type + '" data-target="' + target + '">\
                   <img class="reward-img" data-type="' + type + '" data-src="' + minSrc + '" src="/assets/img/empty.png" itemprop="thumbnail" onload="lzld(this)">\
                 </a>\
                 <figcaption style="display:none" itemprop="caption description">' + data.text[i] + '</figcaption>\

@@ -5,6 +5,8 @@
     
     
     
+    
+    
   <url>
     <loc>//jacob.cool/2017/03/25/open-my-own-blog-with-hexo/</loc>
     <lastmod>2017-04-22T15:10:52.913Z</lastmod>
@@ -23,8 +25,6 @@
     </data>
     </url>
 
-    
-    
     
     
     
