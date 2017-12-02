@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="//jacob.cool/"/>
-  <updated>2017-12-01T15:38:10.000Z</updated>
+  <updated>2017-12-02T11:26:01.000Z</updated>
   <id>//jacob.cool/</id>
   
   <author>
@@ -16,27 +16,24 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>回顾Hexo创建发布文章以及git同同步</title>
+    <title>回顾Hexo创建发布文章以及git同步</title>
     <link href="//jacob.cool/2017/12/01/%E5%9B%9E%E9%A1%BEHexo%E5%88%9B%E5%BB%BA%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0%E4%BB%A5%E5%8F%8Agit%E5%90%8C%E5%90%8C%E6%AD%A5/"/>
     <id>//jacob.cool/2017/12/01/回顾Hexo创建发布文章以及git同同步/</id>
     <published>2017-12-01T15:09:01.000Z</published>
-    <updated>2017-12-01T15:38:10.000Z</updated>
+    <updated>2017-12-02T11:26:01.000Z</updated>
     
-    <content type="html"><![CDATA[<p>最近工作一直特别忙，基本上没有时间来打理我的博客了。</p>
-<p>还是在我的博客上留点什么，把生活中的所见所闻，以及学习中的重要的东西记载下来，就当作学习笔记。 </p>
+    <content type="html"><![CDATA[<p>最近工作一直特别忙，基本上没有时间来打理。</p>
+<p>再忙也还是需要在我的博客上留点什么，把生活中的所见所闻，以及学习中重要的东西记载下来，就当作学习笔记。 </p>
 <p>把两个重要的点记载下来，</p>
 <h2 id="通过HEXO发布文章"><a href="#通过HEXO发布文章" class="headerlink" title="通过HEXO发布文章"></a>通过HEXO发布文章</h2><ol>
-<li>安装<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">git windows</span></div></pre></td></tr></table></figure>
+<li>安装 git windows<br>版本</li>
+<li>通过Git Bash定位到HEXO搭建站的根目录下</li>
+<li>命令行输入<figure class="highlight haxe"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo <span class="keyword">new</span> <span class="type"></span>"<span class="keyword">new</span> <span class="type">article</span>"</div></pre></td></tr></table></figure>
 </li>
 </ol>
-<p>版本</p>
+<a id="more"></a>
 <ol>
-<li>通过Git Bash定位到HEXO搭建站的根目录下</li>
-<li><p>命令行输入</p>
-<figure class="highlight haxe"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo <span class="keyword">new</span> <span class="type"></span>"<span class="keyword">new</span> <span class="type">article</span>"</div></pre></td></tr></table></figure>
-</li>
-<li><p>之后在source/_posts目录下面，多了一个new-article.md的文件，具体可以参考<a href="http://blog.csdn.net/wizardforcel/article/details/40684575" target="_blank" rel="external">http://blog.csdn.net/wizardforcel/article/details/40684575</a></p>
-</li>
+<li>之后在source/_posts目录下面，多了一个new-article.md的文件，具体可以参考<a href="http://blog.csdn.net/wizardforcel/article/details/40684575" target="_blank" rel="external">http://blog.csdn.net/wizardforcel/article/details/40684575</a></li>
 <li>可以在有道笔记里面去编辑md文件</li>
 <li>命令行输入<figure class="highlight verilog"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo <span class="keyword">generate</span></div></pre></td></tr></table></figure>
 </li>
@@ -64,10 +61,15 @@
     
     <summary type="html">
     
-      &lt;p&gt;最近工作一直特别忙，基本上没有时间来打理我的博客了。&lt;/p&gt;
-&lt;p&gt;还是在我的博客上留点什么，把生活中的所见所闻，以及学习中的重要的东西记载下来，就当作学习笔记。 &lt;/p&gt;
+      &lt;p&gt;最近工作一直特别忙，基本上没有时间来打理。&lt;/p&gt;
+&lt;p&gt;再忙也还是需要在我的博客上留点什么，把生活中的所见所闻，以及学习中重要的东西记载下来，就当作学习笔记。 &lt;/p&gt;
 &lt;p&gt;把两个重要的点记载下来，&lt;/p&gt;
-&lt;h2 id=&quot;通过HEXO发布文章&quot;&gt;&lt;a href=&quot;#
+&lt;h2 id=&quot;通过HEXO发布文章&quot;&gt;&lt;a href=&quot;#通过HEXO发布文章&quot; class=&quot;headerlink&quot; title=&quot;通过HEXO发布文章&quot;&gt;&lt;/a&gt;通过HEXO发布文章&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;安装 git windows&lt;br&gt;版本&lt;/li&gt;
+&lt;li&gt;通过Git Bash定位到HEXO搭建站的根目录下&lt;/li&gt;
+&lt;li&gt;命令行输入&lt;figure class=&quot;highlight haxe&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ hexo &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;type&quot;&gt;&lt;/span&gt;&quot;&lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;type&quot;&gt;article&lt;/span&gt;&quot;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
     
     </summary>
     
@@ -83,7 +85,7 @@
     <link href="//jacob.cool/2017/03/25/open-my-own-blog-with-hexo/"/>
     <id>//jacob.cool/2017/03/25/open-my-own-blog-with-hexo/</id>
     <published>2017-03-25T12:00:46.000Z</published>
-    <updated>2017-04-22T15:10:52.913Z</updated>
+    <updated>2017-12-02T11:25:51.000Z</updated>
     
     <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="530" height="86" src="//music.163.com/outchain/player?type=2&id=20744788&auto=1&height=66"></iframe>
 
@@ -91,9 +93,9 @@
 <p> 如果你也想搭建自己的个人博客，请参考《<a href="http://baixin.io/2015/08/HEXO%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" target="_blank" rel="external">HEXO搭建个人博客</a>》<br> 推荐一个比较好用的图床 <a href="http://www.z4a.net/" target="_blank" rel="external">Z4A图床</a></p>
 </blockquote>
 <p>想捣鼓自己的博客有一段时间了，简书是一个不错的写作平台，在这里我读到了很多优秀的文章，学习到了很多新鲜的知识，无论是技术方面还是生活感悟、工作技巧、奇闻异事，我很喜欢在这里看文章的那种感觉，但是我觉得作为一个Developer，有一个自己的博客，写下自己的经验，写下自己的生活必不可少，积累是一个人一生最宝贵的财富。</p>
+<a id="more"></a>
 <p>我看过很多开发者写博客的平台，博客园，CSDN，也尝试过多种搭建博客的方式，最后我被GithubPages + Hexo吸引了，简洁大方，高逼格。</p>
 <p>经过今天不懈的努力，域名也成功解析了，<a href="http://jacob.cool/" target="_blank" rel="external">http://jacob.cool</a> 正式生效了。</p>
-<a id="more"></a>
 <p>附上2015年5月 泰国Kao Tao的早上，还想再去一次涛岛，约吗？<br><a href="http://www.z4a.net/images/2017/03/25/IMG_0137.jpg" target="_blank" rel="external"><img src="http://www.z4a.net/images/2017/03/25/IMG_0137.md.jpg" alt="涛岛早上的美景"> </a></p>
 <p><a href="http://www.z4a.net/images/2017/03/25/IMG_0145.jpg" target="_blank" rel="external"><img src="http://www.z4a.net/images/2017/03/25/IMG_0145.md.jpg" alt="image"> </a></p>
 <p>休息片刻继续研究hexo高级用法，尽请期待！</p>
@@ -107,8 +109,6 @@
 &lt;p&gt; 如果你也想搭建自己的个人博客，请参考《&lt;a href=&quot;http://baixin.io/2015/08/HEXO%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/&quot;&gt;HEXO搭建个人博客&lt;/a&gt;》&lt;br&gt; 推荐一个比较好用的图床 &lt;a href=&quot;http://www.z4a.net/&quot;&gt;Z4A图床&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;想捣鼓自己的博客有一段时间了，简书是一个不错的写作平台，在这里我读到了很多优秀的文章，学习到了很多新鲜的知识，无论是技术方面还是生活感悟、工作技巧、奇闻异事，我很喜欢在这里看文章的那种感觉，但是我觉得作为一个Developer，有一个自己的博客，写下自己的经验，写下自己的生活必不可少，积累是一个人一生最宝贵的财富。&lt;/p&gt;
-&lt;p&gt;我看过很多开发者写博客的平台，博客园，CSDN，也尝试过多种搭建博客的方式，最后我被GithubPages + Hexo吸引了，简洁大方，高逼格。&lt;/p&gt;
-&lt;p&gt;经过今天不懈的努力，域名也成功解析了，&lt;a href=&quot;http://jacob.cool/&quot;&gt;http://jacob.cool&lt;/a&gt; 正式生效了。&lt;/p&gt;
     
     </summary>
     

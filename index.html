@@ -164,7 +164,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/01/回顾Hexo创建发布文章以及git同同步/">回顾Hexo创建发布文章以及git同同步</a>
+      <a class="article-title" href="/2017/12/01/回顾Hexo创建发布文章以及git同同步/">回顾Hexo创建发布文章以及git同步</a>
     </h1>
   
 
@@ -175,45 +175,18 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>最近工作一直特别忙，基本上没有时间来打理我的博客了。</p>
-<p>还是在我的博客上留点什么，把生活中的所见所闻，以及学习中的重要的东西记载下来，就当作学习笔记。 </p>
+        <p>最近工作一直特别忙，基本上没有时间来打理。</p>
+<p>再忙也还是需要在我的博客上留点什么，把生活中的所见所闻，以及学习中重要的东西记载下来，就当作学习笔记。 </p>
 <p>把两个重要的点记载下来，</p>
 <h2 id="通过HEXO发布文章"><a href="#通过HEXO发布文章" class="headerlink" title="通过HEXO发布文章"></a>通过HEXO发布文章</h2><ol>
-<li>安装<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">git windows</span></div></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>版本</p>
-<ol>
+<li>安装 git windows<br>版本</li>
 <li>通过Git Bash定位到HEXO搭建站的根目录下</li>
-<li><p>命令行输入</p>
-<figure class="highlight haxe"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo <span class="keyword">new</span> <span class="type"></span>"<span class="keyword">new</span> <span class="type">article</span>"</div></pre></td></tr></table></figure>
-</li>
-<li><p>之后在source/_posts目录下面，多了一个new-article.md的文件，具体可以参考<a href="http://blog.csdn.net/wizardforcel/article/details/40684575" target="_blank" rel="external">http://blog.csdn.net/wizardforcel/article/details/40684575</a></p>
-</li>
-<li>可以在有道笔记里面去编辑md文件</li>
-<li>命令行输入<figure class="highlight verilog"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo <span class="keyword">generate</span></div></pre></td></tr></table></figure>
+<li>命令行输入<figure class="highlight haxe"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo <span class="keyword">new</span> <span class="type"></span>"<span class="keyword">new</span> <span class="type">article</span>"</div></pre></td></tr></table></figure>
 </li>
 </ol>
-<p>，然后就会看到一串类似下面这样的信息：</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line">INFO  Files loaded <span class="keyword">in</span> <span class="number">2.37</span> s</div><div class="line">INFO  Generated: js/script<span class="selector-class">.js</span></div><div class="line">INFO  Generated: fancybox/jquery<span class="selector-class">.fancybox</span><span class="selector-class">.pack</span><span class="selector-class">.js</span></div><div class="line">INFO  Generated: fancybox/jquery<span class="selector-class">.fancybox</span><span class="selector-class">.js</span></div><div class="line">INFO  Generated: fancybox/jquery<span class="selector-class">.fancybox</span><span class="selector-class">.css</span></div><div class="line">INFO  Generated: fancybox/helpers/jquery<span class="selector-class">.fancybox-thumbs</span><span class="selector-class">.js</span></div><div class="line">INFO  Generated: fancybox/helpers/jquery<span class="selector-class">.fancybox-thumbs</span><span class="selector-class">.css</span></div><div class="line">INFO  Generated: fancybox/helpers/jquery<span class="selector-class">.fancybox-media</span><span class="selector-class">.js</span></div><div class="line">INFO  Generated: fancybox/helpers/jquery<span class="selector-class">.fancybox-buttons</span><span class="selector-class">.js</span></div><div class="line">INFO  Generated: fancybox/helpers/jquery<span class="selector-class">.fancybox-buttons</span><span class="selector-class">.css</span></div><div class="line">INFO  Generated: fancybox/helpers/fancybox_buttons<span class="selector-class">.png</span></div><div class="line">INFO  Generated: fancybox/fancybox_sprite@<span class="number">2</span>x<span class="selector-class">.png</span></div><div class="line">INFO  Generated: fancybox/fancybox_sprite<span class="selector-class">.png</span></div><div class="line">INFO  Generated: fancybox/fancybox_overlay<span class="selector-class">.png</span></div><div class="line">INFO  Generated: fancybox/fancybox_loading@<span class="number">2</span>x<span class="selector-class">.gif</span></div><div class="line">INFO  Generated: fancybox/fancybox_loading<span class="selector-class">.gif</span></div><div class="line">INFO  Generated: fancybox/blank<span class="selector-class">.gif</span></div><div class="line">INFO  Generated: css/style<span class="selector-class">.css</span></div><div class="line">INFO  Generated: css/images/banner<span class="selector-class">.jpg</span></div><div class="line">INFO  Generated: css/fonts/fontawesome-webfont<span class="selector-class">.woff</span></div><div class="line">INFO  Generated: css/fonts/fontawesome-webfont<span class="selector-class">.ttf</span></div><div class="line">INFO  Generated: css/fonts/fontawesome-webfont<span class="selector-class">.svg</span></div><div class="line">INFO  Generated: css/fonts/fontawesome-webfont<span class="selector-class">.eot</span></div><div class="line">INFO  Generated: css/fonts/FontAwesome<span class="selector-class">.otf</span></div><div class="line">INFO  Generated: <span class="number">2015</span>/<span class="number">12</span>/<span class="number">13</span>/Hello/index<span class="selector-class">.html</span></div><div class="line">INFO  Generated: <span class="number">2015</span>/<span class="number">12</span>/<span class="number">13</span>/hello-world/index<span class="selector-class">.html</span></div><div class="line">INFO  Generated: archives/index<span class="selector-class">.html</span></div><div class="line">INFO  Generated: archives/<span class="number">2015</span>/index<span class="selector-class">.html</span></div><div class="line">INFO  Generated: archives/<span class="number">2015</span>/<span class="number">12</span>/index<span class="selector-class">.html</span></div><div class="line">INFO  Generated: index<span class="selector-class">.html</span></div><div class="line">INFO  <span class="number">29</span> files generated <span class="keyword">in</span> <span class="number">2.19</span> s</div></pre></td></tr></table></figure>
-<p>怎么样，我们的博客已经生成完毕啦，so easy！</p>
-<ol>
-<li>预览网站，我们会看到这样一条提示：</li>
-</ol>
-<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">INFO  Hexo is running <span class="keyword">at</span> <span class="keyword">http</span>://<span class="number">0.0</span><span class="number">.0</span><span class="number">.0</span>:<span class="number">4000</span>/. Press Ctrl+C <span class="built_in">to</span> <span class="built_in">stop</span>.</div></pre></td></tr></table></figure>
-<p>现在打开浏览器访问<a href="http://localhost:4000/试试吧！" target="_blank" rel="external">http://localhost:4000/试试吧！</a><br><figure class="highlight axapta"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo <span class="keyword">server</span></div></pre></td></tr></table></figure></p>
-<ol>
-<li><p>命令行输入</p>
-<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">hexo d</span></div></pre></td></tr></table></figure>
-<p>部署到github上。如果部署遇到问题百度就知道，一般都是配置问题。是不是感觉很简单。 </p>
-</li>
-</ol>
-<h2 id="如何同步本地HEXO项目文件到github备份"><a href="#如何同步本地HEXO项目文件到github备份" class="headerlink" title="如何同步本地HEXO项目文件到github备份"></a>如何同步本地HEXO项目文件到github备份</h2><ol>
-<li>安装github桌面版</li>
-<li>选中github上需要同步过去的项目</li>
-<li>然后change都能清晰看到，然后直接同步即可。记住安装git和github</li>
-</ol>
-
+        
+          <a class="article-more-a" href="/2017/12/01/回顾Hexo创建发布文章以及git同同步/#more">more >></a>
+        
       
 
       
@@ -284,8 +257,6 @@
 <p> 如果你也想搭建自己的个人博客，请参考《<a href="http://baixin.io/2015/08/HEXO%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">HEXO搭建个人博客</a>》<br> 推荐一个比较好用的图床 <a href="http://www.z4a.net/">Z4A图床</a></p>
 </blockquote>
 <p>想捣鼓自己的博客有一段时间了，简书是一个不错的写作平台，在这里我读到了很多优秀的文章，学习到了很多新鲜的知识，无论是技术方面还是生活感悟、工作技巧、奇闻异事，我很喜欢在这里看文章的那种感觉，但是我觉得作为一个Developer，有一个自己的博客，写下自己的经验，写下自己的生活必不可少，积累是一个人一生最宝贵的财富。</p>
-<p>我看过很多开发者写博客的平台，博客园，CSDN，也尝试过多种搭建博客的方式，最后我被GithubPages + Hexo吸引了，简洁大方，高逼格。</p>
-<p>经过今天不懈的努力，域名也成功解析了，<a href="http://jacob.cool/">http://jacob.cool</a> 正式生效了。</p>
         
           <a class="article-more-a" href="/2017/03/25/open-my-own-blog-with-hexo/#more">more >></a>
         
