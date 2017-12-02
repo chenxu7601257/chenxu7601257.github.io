@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Jacob的博客</title>
+  <title>雅各布.Jacob - AI之路</title>
   <subtitle>山积而高，泽积而长</subtitle>
   <link href="/atom.xml" rel="self"/>
   
@@ -9,8 +9,8 @@
   <id>//jacob.cool/</id>
   
   <author>
-    <name>雅克布.Jacob</name>
-    <email>chenxu7601257s@qq.com</email>
+    <name>雅各布.Jacob</name>
+    <email>jacob.xu.chen@outlook.com</email>
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
