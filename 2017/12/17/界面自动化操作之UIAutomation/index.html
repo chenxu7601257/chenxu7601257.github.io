@@ -6,17 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="//jacob.cool">
-  <title>Archives: 2017 | 雅各布.Jacob - AI之路</title>
+  <title>
+界面自动化操作之UIAutomation封装 | 雅各布.Jacob - AI之路</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Jacob, 又叫雅各布, 85后双鱼座普通男青年！喜欢钻研和敲代码的感觉，相信变成是一门艺术，自诩为游弋在代码里的人生">
-<meta property="og:type" content="website">
-<meta property="og:title" content="雅各布.Jacob - AI之路">
-<meta property="og:url" content="//jacob.cool/archives/2017/index.html">
+  <meta name="description" content="界面的自动化操作   UI自动化测试 软件外挂   Win32基础知识   Win32中一切元素皆窗口，窗口之间有父子关系。整个桌面是一个“根窗口”。   UIAutonation基础   需要添加对下面DLL的引用 1UIAutomationClient、 UIAutomationProvider、 UIAutomationTypes  AutomationElement.RootElemen">
+<meta name="keywords">
+<meta property="og:type" content="article">
+<meta property="og:title" content="
+界面自动化操作之UIAutomation封装">
+<meta property="og:url" content="//jacob.cool/2017/12/17/界面自动化操作之UIAutomation/index.html">
 <meta property="og:site_name" content="雅各布.Jacob - AI之路">
-<meta property="og:description" content="Jacob, 又叫雅各布, 85后双鱼座普通男青年！喜欢钻研和敲代码的感觉，相信变成是一门艺术，自诩为游弋在代码里的人生">
+<meta property="og:description" content="界面的自动化操作   UI自动化测试 软件外挂   Win32基础知识   Win32中一切元素皆窗口，窗口之间有父子关系。整个桌面是一个“根窗口”。   UIAutonation基础   需要添加对下面DLL的引用 1UIAutomationClient、 UIAutomationProvider、 UIAutomationTypes  AutomationElement.RootElemen">
+<meta property="og:updated_time" content="2017-12-17T10:05:06.280Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="雅各布.Jacob - AI之路">
-<meta name="twitter:description" content="Jacob, 又叫雅各布, 85后双鱼座普通男青年！喜欢钻研和敲代码的感觉，相信变成是一门艺术，自诩为游弋在代码里的人生">
+<meta name="twitter:title" content="
+界面自动化操作之UIAutomation封装">
+<meta name="twitter:description" content="界面的自动化操作   UI自动化测试 软件外挂   Win32基础知识   Win32中一切元素皆窗口，窗口之间有父子关系。整个桌面是一个“根窗口”。   UIAutonation基础   需要添加对下面DLL的引用 1UIAutomationClient、 UIAutomationProvider、 UIAutomationTypes  AutomationElement.RootElemen">
   
   
     <link rel="icon" href="/favicon.png">
@@ -154,134 +159,243 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-界面自动化操作之UIAutomation" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      
+界面自动化操作之UIAutomation封装
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/17/界面自动化操作之UIAutomation/" class="archive-article-date">
+
+        
+        <a href="/2017/12/17/界面自动化操作之UIAutomation/" class="archive-article-date">
   	<time datetime="2017-12-17T09:47:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-17</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/17/界面自动化操作之UIAutomation/">
-界面自动化操作之UIAutomation封装</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>界面的自动化操作</p>
+</blockquote>
+<ul>
+<li>UI自动化测试</li>
+<li>软件外挂</li>
+</ul>
+<blockquote>
+<p>Win32基础知识</p>
+</blockquote>
+<ul>
+<li>Win32中一切元素皆窗口，窗口之间有父子关系。整个桌面是一个“根窗口”。</li>
+</ul>
+<blockquote>
+<p>UIAutonation基础</p>
+</blockquote>
+<ul>
+<li><p>需要添加对下面DLL的引用</p>
+<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">UIAutomationClient</span>、 <span class="built_in">UIAutomationProvider</span>、 <span class="built_in">UIAutomationTypes</span></div></pre></td></tr></table></figure>
+</li>
+<li><p><em>AutomationElement.RootElement</em>是窗口根元素</p>
+</li>
+<li><p><em>AutomationElement.FromHandle(IntPtr hwnd)</em>从窗口句柄拿到AutomationElement对象。</p>
+</li>
+</ul>
+<blockquote>
+<p>基本操作之遍历：</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">mainElement</span><span class="selector-class">.FindAll</span>(<span class="selector-tag">TreeScope</span><span class="selector-class">.Descendants</span>,<span class="selector-tag">new</span> <span class="selector-tag">PropertyCondition</span>(<span class="selector-tag">AutomationElement</span><span class="selector-class">.ClassNameProperty</span>, "<span class="selector-tag">TLabeledEdit</span>"));</div></pre></td></tr></table></figure>
+<p><em>TreeScope.Descendants</em>代表递归从所有子孙元素中递归查找；如果是从直接子节点查找，则使用<em>TreeScope.Children</em>。</p>
+<p>Condition是过滤条件，可以根据类名等查找，如果是不指定查询条件则使用Condition.True Condition。</p>
+<p>FindFirst是查到第一个。</p>
+<blockquote>
+<p>基本操作之点击按钮、设置文本、读取文本使用Pattern来实现。不是所有Pattern都支持</p>
+</blockquote>
+<ul>
+<li>设置控件的值 ValuePattern </li>
+</ul>
+<figure class="highlight abnf"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">valuePattern</span> = (ValuePattern)element.GetCurrentPattern(ValuePattern.Pattern)<span class="comment">;</span></div><div class="line"></div><div class="line">valuePattern.SetValue(<span class="string">"rupeng.com"</span>)<span class="comment">;</span></div></pre></td></tr></table></figure>
+<ul>
+<li>得到文本控件的值 TextPattern </li>
+</ul>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">valuePattern</span> = (TextPattern)element.GetCurrentPattern(TextPattern.Pattern);</div><div class="line"><span class="attribute">string v</span>=  valuePattern.DocumentRange.GetText(-1);</div></pre></td></tr></table></figure>
+<ul>
+<li>调用控件，比如点击按钮</li>
+</ul>
+<figure class="highlight abnf"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var clickPattern = (InvokePattern)element.GetCurrentPattern(InvokePattern.Pattern)<span class="comment">;</span></div><div class="line"></div><div class="line">clickPattern.Invoke()<span class="comment">;</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>JacobUIAutomation对基本操作的封装</p>
+</blockquote>
+<p>对于刚接触UIAutomation来说，大而全的文档反而使得无从下手。 为此在UI Automation的基础上结合实践经验，对各种简单的操作进行了封装。由于几年前写的，其中可能存在各种问题，现在工作比较忙，基本上没有空重写或者维护，如在使用中遇到各种坑，请包涵。同时望有精力者不断完善。</p>
+<p>项目在Github上的地址： <a href="https://github.com/chenxu7601257/UIAutomation" target="_blank" rel="external">https://github.com/chenxu7601257/UIAutomation</a><br>项目帮助文件下载: <a href="http://download.csdn.net/download/chenxu7601257/5163879" target="_blank" rel="external">http://download.csdn.net/download/chenxu7601257/5163879</a> </p>
+<blockquote>
+<p>如何获取DLL文件</p>
+</blockquote>
+<p>请使用Nuget获取，如果不知道什么是Nuget怎么使用Nuget，请点击这儿 <a href="http://kb.cnblogs.com/page/143190/" target="_blank" rel="external">http://kb.cnblogs.com/page/143190/</a></p>
+<p> 在Manage Nuget Packages窗口下，搜索Jacob或者Jacob.UIAutomation，第一个就是，然后Install就可以成功将Dll引用到你的项目中。</p>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="http://www.jacob.cool/assets/blogImg/alipay.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="http://www.jacob.cool/assets/blogImg/weixin.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACuklEQVR42u3aQW4bMRAEQP//08nVgSKpe4Y0ZKD2ZKwlkrUGdsZNfn3F159v1+Odx99+/8yzz+f3H0c7fOHh4eEtlt5OlkyZj7l/uP8ZDQ8PD+8a79mg7St+hkzAyVx4eHh4n89Lxkma7GQleHh4eL+Xl7/Ek2/NSHh4eHifwEvCiOTzxcQvW+28qBzLWvDw8PC62aNdpM/5+cr+Hh4eHt56Vz2Pa/NikB8ymBWkf8bHw8PDu8Br49c8Ymhjhc2m15uV4OHh4R3lJf/M54cG2tB2FhPnB8Lw8PDw7vHaAtDGr3mpaIvEm3nx8PDwrvFa5OtoIAkpZo17/ufBw8PD+0levqD2CFTemucN95sigYeHh3eBl5DabbD8keXz5o14nVLj4eHhjXjJqzZZSttqz8KI9vABHh4e3lnerLU9RZ3dKWbBw8PDu8Cbbdu3AUEb5u6b+2KXDw8PD+8or41Wk/ttVLFp6/Hw8PBu82aN8j7SnR0UKAoPHh4e3jVeHh+0zXeOGSbQr+fFw8PDO8rbDzRroPPtrmSdT2fEw8PDu8Dbt637QwM5LN+oO9aV4+Hh4QVvy7wMJIto49q8nOSlCA8PD+8ebxYf5FHvrE0/EHPg4eHhXePlS3+9lDaA2Dzc6CHi4eHhXeC1Le/sAME+Gp4FFnh4eHg3eLPXdJsQJ4+mPQ672vTCw8PDW/PyaxPv5mFxPk5UGPDw8PAu8NqwNXk1b0LbvL2uYwg8PDy8BW9WEtoiMTuYVRwOwMPDw/tBXvvC3TfWbYGZjVkj8fDw8EpeXgzqbj0uJG3hKdp3PDw8vGu8fHs+WcRmW+vwhYeHh/cBvPaV3ZafpOsvvoWHh4f3Abx80UnZSOLdVdOPh4eHd43Xbnq1UUIb17ZRyJuTEXh4eHhHee3XZu31rGy07fWBwAIPDw/vFe8vgxjPFAuzYJMAAAAASUVORK5CYII=" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/01/回顾Hexo创建发布文章以及git同同步/" class="archive-article-date">
-  	<time datetime="2017-12-01T15:09:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-01</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2017/12/01/回顾Hexo创建发布文章以及git同同步/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          回顾Hexo创建发布文章以及git同步
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/01/回顾Hexo创建发布文章以及git同同步/">回顾Hexo创建发布文章以及git同步</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">github - 学习笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/03/25/open-my-own-blog-with-hexo/" class="archive-article-date">
-  	<time datetime="2017-03-25T12:00:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-25</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/03/25/open-my-own-blog-with-hexo/">开通个人博客 - Hexo</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">博客</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">hexo - villa</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
+<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: "//jacob.cool/2017/12/17/界面自动化操作之UIAutomation/",
+  owner: 'chenxu7601257',
+  repo: 'chenxu7601257.github.io',
+  oauth: {
+    client_id: '8f373dc14dfc600824ea',
+    client_secret: '8e7fdf1caeb8c52c1f8474b67e09316aabb4bf5b',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
+  
 
 
           </div>
@@ -304,8 +418,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

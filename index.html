@@ -156,6 +156,126 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-界面自动化操作之UIAutomation" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/17/界面自动化操作之UIAutomation/">
+界面自动化操作之UIAutomation封装</a>
+    </h1>
+  
+
+        
+        <a href="/2017/12/17/界面自动化操作之UIAutomation/" class="archive-article-date">
+  	<time datetime="2017-12-17T09:47:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-17</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>界面的自动化操作</p>
+</blockquote>
+<ul>
+<li>UI自动化测试</li>
+<li>软件外挂</li>
+</ul>
+<blockquote>
+<p>Win32基础知识</p>
+</blockquote>
+<ul>
+<li>Win32中一切元素皆窗口，窗口之间有父子关系。整个桌面是一个“根窗口”。</li>
+</ul>
+<blockquote>
+<p>UIAutonation基础</p>
+</blockquote>
+<ul>
+<li><p>需要添加对下面DLL的引用</p>
+<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">UIAutomationClient</span>、 <span class="built_in">UIAutomationProvider</span>、 <span class="built_in">UIAutomationTypes</span></div></pre></td></tr></table></figure>
+</li>
+<li><p><em>AutomationElement.RootElement</em>是窗口根元素</p>
+</li>
+<li><p><em>AutomationElement.FromHandle(IntPtr hwnd)</em>从窗口句柄拿到AutomationElement对象。</p>
+</li>
+</ul>
+<blockquote>
+<p>基本操作之遍历：</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">mainElement</span><span class="selector-class">.FindAll</span>(<span class="selector-tag">TreeScope</span><span class="selector-class">.Descendants</span>,<span class="selector-tag">new</span> <span class="selector-tag">PropertyCondition</span>(<span class="selector-tag">AutomationElement</span><span class="selector-class">.ClassNameProperty</span>, "<span class="selector-tag">TLabeledEdit</span>"));</div></pre></td></tr></table></figure>
+<p><em>TreeScope.Descendants</em>代表递归从所有子孙元素中递归查找；如果是从直接子节点查找，则使用<em>TreeScope.Children</em>。</p>
+<p>Condition是过滤条件，可以根据类名等查找，如果是不指定查询条件则使用Condition.True Condition。</p>
+<p>FindFirst是查到第一个。</p>
+<blockquote>
+<p>基本操作之点击按钮、设置文本、读取文本使用Pattern来实现。不是所有Pattern都支持</p>
+</blockquote>
+<ul>
+<li>设置控件的值 ValuePattern </li>
+</ul>
+<figure class="highlight abnf"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">valuePattern</span> = (ValuePattern)element.GetCurrentPattern(ValuePattern.Pattern)<span class="comment">;</span></div><div class="line"></div><div class="line">valuePattern.SetValue(<span class="string">"rupeng.com"</span>)<span class="comment">;</span></div></pre></td></tr></table></figure>
+<ul>
+<li>得到文本控件的值 TextPattern </li>
+</ul>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">valuePattern</span> = (TextPattern)element.GetCurrentPattern(TextPattern.Pattern);</div><div class="line"><span class="attribute">string v</span>=  valuePattern.DocumentRange.GetText(-1);</div></pre></td></tr></table></figure>
+<ul>
+<li>调用控件，比如点击按钮</li>
+</ul>
+<figure class="highlight abnf"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var clickPattern = (InvokePattern)element.GetCurrentPattern(InvokePattern.Pattern)<span class="comment">;</span></div><div class="line"></div><div class="line">clickPattern.Invoke()<span class="comment">;</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>JacobUIAutomation对基本操作的封装</p>
+</blockquote>
+<p>对于刚接触UIAutomation来说，大而全的文档反而使得无从下手。 为此在UI Automation的基础上结合实践经验，对各种简单的操作进行了封装。由于几年前写的，其中可能存在各种问题，现在工作比较忙，基本上没有空重写或者维护，如在使用中遇到各种坑，请包涵。同时望有精力者不断完善。</p>
+<p>项目在Github上的地址： <a href="https://github.com/chenxu7601257/UIAutomation" target="_blank" rel="external">https://github.com/chenxu7601257/UIAutomation</a><br>项目帮助文件下载: <a href="http://download.csdn.net/download/chenxu7601257/5163879" target="_blank" rel="external">http://download.csdn.net/download/chenxu7601257/5163879</a> </p>
+<blockquote>
+<p>如何获取DLL文件</p>
+</blockquote>
+<p>请使用Nuget获取，如果不知道什么是Nuget怎么使用Nuget，请点击这儿 <a href="http://kb.cnblogs.com/page/143190/" target="_blank" rel="external">http://kb.cnblogs.com/page/143190/</a></p>
+<p> 在Manage Nuget Packages窗口下，搜索Jacob或者Jacob.UIAutomation，第一个就是，然后Install就可以成功将Dll引用到你的项目中。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/12/17/界面自动化操作之UIAutomation/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-回顾Hexo创建发布文章以及git同同步" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
