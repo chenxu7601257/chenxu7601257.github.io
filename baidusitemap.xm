@@ -5,13 +5,19 @@
     
   <url>
     <loc>//jacob.cool/2017/12/17/%E7%95%8C%E9%9D%A2%E8%87%AA%E5%8A%A8%E5%8C%96%E6%93%8D%E4%BD%9C%E4%B9%8BUIAutomation/</loc>
-    <lastmod>2017-12-17T10:10:28.116Z</lastmod>
+    <lastmod>2017-12-17T10:12:06.407Z</lastmod>
     <data>
         <display>
         <title>
 界面自动化操作之UIAutomation封装</title>
         <pubTime>2017-12-17T09:47:31.000Z</pubTime>
         
+        <tag>自动化</tag>
+         
+        <tag>UIAutomation</tag>
+         
+        <tag>Jacob</tag>
+         
          
            
         </display>

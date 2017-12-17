@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="//jacob.cool/"/>
-  <updated>2017-12-17T10:10:28.116Z</updated>
+  <updated>2017-12-17T10:12:06.407Z</updated>
   <id>//jacob.cool/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="//jacob.cool/2017/12/17/%E7%95%8C%E9%9D%A2%E8%87%AA%E5%8A%A8%E5%8C%96%E6%93%8D%E4%BD%9C%E4%B9%8BUIAutomation/"/>
     <id>//jacob.cool/2017/12/17/界面自动化操作之UIAutomation/</id>
     <published>2017-12-17T09:47:31.000Z</published>
-    <updated>2017-12-17T10:10:28.116Z</updated>
+    <updated>2017-12-17T10:12:06.407Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>界面的自动化操作</p>
@@ -109,6 +109,12 @@
     
     </summary>
     
+    
+      <category term="自动化" scheme="//jacob.cool/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    
+      <category term="UIAutomation" scheme="//jacob.cool/tags/UIAutomation/"/>
+    
+      <category term="Jacob" scheme="//jacob.cool/tags/Jacob/"/>
     
   </entry>
   
