@@ -194,47 +194,12 @@
 <p>UIAutonation基础</p>
 </blockquote>
 <ul>
-<li><p>需要添加对下面DLL的引用</p>
-<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">UIAutomationClient</span>、 <span class="built_in">UIAutomationProvider</span>、 <span class="built_in">UIAutomationTypes</span></div></pre></td></tr></table></figure>
-</li>
-<li><p><em>AutomationElement.RootElement</em>是窗口根元素</p>
-</li>
-<li><p><em>AutomationElement.FromHandle(IntPtr hwnd)</em>从窗口句柄拿到AutomationElement对象。</p>
+<li>需要添加对下面DLL的引用<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">UIAutomationClient</span>、 <span class="built_in">UIAutomationProvider</span>、 <span class="built_in">UIAutomationTypes</span></div></pre></td></tr></table></figure>
 </li>
 </ul>
-<blockquote>
-<p>基本操作之遍历：</p>
-</blockquote>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">mainElement</span><span class="selector-class">.FindAll</span>(<span class="selector-tag">TreeScope</span><span class="selector-class">.Descendants</span>,<span class="selector-tag">new</span> <span class="selector-tag">PropertyCondition</span>(<span class="selector-tag">AutomationElement</span><span class="selector-class">.ClassNameProperty</span>, "<span class="selector-tag">TLabeledEdit</span>"));</div></pre></td></tr></table></figure>
-<p><em>TreeScope.Descendants</em>代表递归从所有子孙元素中递归查找；如果是从直接子节点查找，则使用<em>TreeScope.Children</em>。</p>
-<p>Condition是过滤条件，可以根据类名等查找，如果是不指定查询条件则使用Condition.True Condition。</p>
-<p>FindFirst是查到第一个。</p>
-<blockquote>
-<p>基本操作之点击按钮、设置文本、读取文本使用Pattern来实现。不是所有Pattern都支持</p>
-</blockquote>
-<ul>
-<li>设置控件的值 ValuePattern </li>
-</ul>
-<figure class="highlight abnf"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">valuePattern</span> = (ValuePattern)element.GetCurrentPattern(ValuePattern.Pattern)<span class="comment">;</span></div><div class="line"></div><div class="line">valuePattern.SetValue(<span class="string">"rupeng.com"</span>)<span class="comment">;</span></div></pre></td></tr></table></figure>
-<ul>
-<li>得到文本控件的值 TextPattern </li>
-</ul>
-<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">valuePattern</span> = (TextPattern)element.GetCurrentPattern(TextPattern.Pattern);</div><div class="line"><span class="attribute">string v</span>=  valuePattern.DocumentRange.GetText(-1);</div></pre></td></tr></table></figure>
-<ul>
-<li>调用控件，比如点击按钮</li>
-</ul>
-<figure class="highlight abnf"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var clickPattern = (InvokePattern)element.GetCurrentPattern(InvokePattern.Pattern)<span class="comment">;</span></div><div class="line"></div><div class="line">clickPattern.Invoke()<span class="comment">;</span></div></pre></td></tr></table></figure>
-<blockquote>
-<p>JacobUIAutomation对基本操作的封装</p>
-</blockquote>
-<p>对于刚接触UIAutomation来说，大而全的文档反而使得无从下手。 为此在UI Automation的基础上结合实践经验，对各种简单的操作进行了封装。由于几年前写的，其中可能存在各种问题，现在工作比较忙，基本上没有空重写或者维护，如在使用中遇到各种坑，请包涵。同时望有精力者不断完善。</p>
-<p>项目在Github上的地址： <a href="https://github.com/chenxu7601257/UIAutomation" target="_blank" rel="external">https://github.com/chenxu7601257/UIAutomation</a><br>项目帮助文件下载: <a href="http://download.csdn.net/download/chenxu7601257/5163879" target="_blank" rel="external">http://download.csdn.net/download/chenxu7601257/5163879</a> </p>
-<blockquote>
-<p>如何获取DLL文件</p>
-</blockquote>
-<p>请使用Nuget获取，如果不知道什么是Nuget怎么使用Nuget，请点击这儿 <a href="http://kb.cnblogs.com/page/143190/" target="_blank" rel="external">http://kb.cnblogs.com/page/143190/</a></p>
-<p> 在Manage Nuget Packages窗口下，搜索Jacob或者Jacob.UIAutomation，第一个就是，然后Install就可以成功将Dll引用到你的项目中。</p>
-
+        
+          <a class="article-more-a" href="/2017/12/17/界面自动化操作之UIAutomation/#more">more >></a>
+        
       
 
       
@@ -542,19 +507,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">github - 学习笔记</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">博客</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">hexo - villa</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">github - 学习笔记</a>
               </li>
             
             <div class="clearfix"></div>

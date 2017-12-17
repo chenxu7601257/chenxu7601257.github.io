@@ -5,7 +5,7 @@
     
   <url>
     <loc>//jacob.cool/2017/12/17/%E7%95%8C%E9%9D%A2%E8%87%AA%E5%8A%A8%E5%8C%96%E6%93%8D%E4%BD%9C%E4%B9%8BUIAutomation/</loc>
-    <lastmod>2017-12-17T10:05:06.280Z</lastmod>
+    <lastmod>2017-12-17T10:10:28.116Z</lastmod>
     <data>
         <display>
         <title>

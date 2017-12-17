@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="//jacob.cool/"/>
-  <updated>2017-12-17T10:05:06.280Z</updated>
+  <updated>2017-12-17T10:10:28.116Z</updated>
   <id>//jacob.cool/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="//jacob.cool/2017/12/17/%E7%95%8C%E9%9D%A2%E8%87%AA%E5%8A%A8%E5%8C%96%E6%93%8D%E4%BD%9C%E4%B9%8BUIAutomation/"/>
     <id>//jacob.cool/2017/12/17/界面自动化操作之UIAutomation/</id>
     <published>2017-12-17T09:47:31.000Z</published>
-    <updated>2017-12-17T10:05:06.280Z</updated>
+    <updated>2017-12-17T10:10:28.116Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>界面的自动化操作</p>
@@ -40,9 +40,11 @@
 <p>UIAutonation基础</p>
 </blockquote>
 <ul>
-<li><p>需要添加对下面DLL的引用</p>
-<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">UIAutomationClient</span>、 <span class="built_in">UIAutomationProvider</span>、 <span class="built_in">UIAutomationTypes</span></div></pre></td></tr></table></figure>
+<li>需要添加对下面DLL的引用<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">UIAutomationClient</span>、 <span class="built_in">UIAutomationProvider</span>、 <span class="built_in">UIAutomationTypes</span></div></pre></td></tr></table></figure>
 </li>
+</ul>
+<a id="more"></a>
+<ul>
 <li><p><em>AutomationElement.RootElement</em>是窗口根元素</p>
 </li>
 <li><p><em>AutomationElement.FromHandle(IntPtr hwnd)</em>从窗口句柄拿到AutomationElement对象。</p>
@@ -95,7 +97,15 @@
 &lt;p&gt;Win32基础知识&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;Wi
+&lt;li&gt;Win32中一切元素皆窗口，窗口之间有父子关系。整个桌面是一个“根窗口”。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;UIAutonation基础&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;需要添加对下面DLL的引用&lt;figure class=&quot;highlight objectivec&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;UIAutomationClient&lt;/span&gt;、 &lt;span class=&quot;built_in&quot;&gt;UIAutomationProvider&lt;/span&gt;、 &lt;span class=&quot;built_in&quot;&gt;UIAutomationTypes&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
