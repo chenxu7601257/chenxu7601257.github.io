@@ -385,18 +385,27 @@
 <link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
 <script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
-var gitment = new Gitment({
-  id: "//jacob.cool/2017/12/01/回顾Hexo创建发布文章以及git同同步/",
-  owner: 'chenxu7601257',
-  repo: 'chenxu7601257.github.io',
-  oauth: {
-    client_id: '8f373dc14dfc600824ea',
-    client_secret: '8e7fdf1caeb8c52c1f8474b67e09316aabb4bf5b',
-  },
-})
-gitment.render('gitment-ctn')
+  var gitment = new Gitment({
+    id: "//jacob.cool/2017/12/01/回顾Hexo创建发布文章以及git同同步/",
+    owner: 'chenxu7601257',
+    repo: 'chenxu7601257.github.io',
+    oauth: {
+      client_id: '8f373dc14dfc600824ea',
+      client_secret: '8e7fdf1caeb8c52c1f8474b67e09316aabb4bf5b',
+    },
+  });
+  gitment.render('gitment-ctn');
+  $('.gitment-footer-container').remove();
 </script>
 <style>
+  .gitment-root-container{
+    background-color:#ffffff;
+  }
+
+  .gitment-root-container div{
+    margin: 10px;
+  }
+
   .gitment-comment-body{
     font-size: 10px!important;
   }
@@ -498,14 +507,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">博客</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">hexo - villa</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
@@ -523,6 +524,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Jacob</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">博客</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">hexo - villa</a>
               </li>
             
             <div class="clearfix"></div>
